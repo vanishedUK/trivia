@@ -12,13 +12,9 @@ class App extends Component {
     };
   }
   async componentDidMount() {
-    try {
-      let response = await fetch(TRIVIA_API);
-      let data = await response.json();
-      this.setState({ question: data.results[0] });
-    } catch (error) {
-      console.log(error);
-    }
+    let response = await fetch(TRIVIA_API);
+    let data = await response.json();
+    console.log(data.results[0]);
   }
 
   render() {
@@ -30,9 +26,7 @@ class App extends Component {
           <span className="fw-bolder">sorry</span>)
         </h2>
         <hr />
-        <div>
-          {this.state.question && <Question question={this.state.question} />}
-        </div>
+        <div>{/* Render question here */}</div>
       </div>
     );
   }

@@ -30,9 +30,7 @@ class App extends Component {
           <span className="fw-bolder">sorry</span>)
         </h2>
         <hr />
-        <div>
-          {this.state.question && <Question question={this.state.question} />}
-        </div>
+        <div>{/* Render question here */}</div>
       </div>
     );
   }
