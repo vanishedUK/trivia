@@ -35,22 +35,12 @@ class Question extends React.Component {
             <AnswerButton
               key={answer}
               answer={answer}
-              handleGuess={() => {
-                this.handleGuess(answer);
-              }}
+              handleGuess={this.props.question.question}
             />
           ))}
         </div>
 
-        {this.state.guessed && (
-          <div>
-            {this.state.guess === this.props.question.correct_answer ? (
-              <span className="text-success">Correct!</span>
-            ) : (
-              <span className="text-danger">Incorrect!</span>
-            )}
-          </div>
-        )}
+        {/* Dynamically render correct/incorrect here! */}
       </div>
     );
   }

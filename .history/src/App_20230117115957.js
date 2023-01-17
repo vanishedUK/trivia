@@ -26,7 +26,7 @@ class App extends Component {
       <div className="container l:w-50 p-5">
         <h1 className="display-1">Trivia</h1>
         <h2 className="fw-lighter fs-5 mb-4">
-          (we couldn&lsquo;t think of a better name,{" "}
+          (we couldn't think of a better name,{" "}
           <span className="fw-bolder">sorry</span>)
         </h2>
         <hr />
