@@ -9,7 +9,7 @@ class AnswerButton extends React.Component {
   render() {
     return (
       <button
-        onClick={this.props.handleGuess}
+        onClick={this.props.onClick}
         className='btn btn-outline-primary'
       >
         {decodeHTML(this.props.answer)}

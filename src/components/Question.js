@@ -35,6 +35,7 @@ class Question extends React.Component {
             <AnswerButton
               key={answer}
               answer={answer}
+              onClick={() => this.handleGuess(answer)}
             />
           ))}
         </div>
